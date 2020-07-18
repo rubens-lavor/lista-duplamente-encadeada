@@ -3,8 +3,6 @@
 
 #include "lista_privado.h"
 
-//coloque aqui a implementacao das operacoes do TDA lista duplamente encadeada generico
-
 
 typedef struct lista{
 	
@@ -60,8 +58,8 @@ lista_t *lista_cria(void (*imp)(const void *), void (*libera)(void *), int (*com
     //lista_t *l=(lista_t*) malloc(sizeof(lista_t));
     
     //if(l != NULL)
-    //    *l = NULL; //o endereço para onde l aponta recebe NULL
-    //return l; // retorna o endereço q o ponteiro quarda.
+    //    *l = NULL; //o endereï¿½o para onde l aponta recebe NULL
+    //return l; // retorna o endereï¿½o q o ponteiro quarda.
     
     
     
@@ -76,7 +74,7 @@ lista_t *lista_cria(void (*imp)(const void *), void (*libera)(void *), int (*com
  * Pos: os recursos da lista foram liberados com sucesso e a lista "l" torna-se nula
  */
 void lista_destroi(lista_t **l){
-    if(l == NULL || *l == NULL) return; //veriifica se a lista não existe
+    if(l == NULL || *l == NULL) return; //veriifica se a lista nï¿½o existe
     
     void *removido;
     
@@ -147,7 +145,7 @@ celula_t *lista_cabeca(lista_t *l){
 	return NULL;
 	}
 	
-	return l->cabeça;
+	return l->cabeï¿½a;
 
 
 }
